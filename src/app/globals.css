@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --textDark: green;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: var(--textDark);
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.signinPasswordShowBtn {
+  cursor: pointer;
+}
+
+.signupPasswordShowBtn {
+  cursor: pointer;
+}
+
+.passwordShow {
+  display: block;
+}
+
+#SignIn_cancelform {
+  cursor: pointer;
+}
+
+.passwordHide {
+  display: none;
+}
+
+#SignIn_passwordON {
+  display: block;
+}
+
+#SignIn_passwordOFF {
+  display: none;
+}
+
+#SignUp_passwordON {
+  display: block;
+}
+
+#SignUp_passwordOFF {
+  display: none;
+}
+
+#SignUp_confirmPasswordON {
+  display: block;
+}
+
+#SignUp_confirmPasswordOFF {
+  display: none;
+}
